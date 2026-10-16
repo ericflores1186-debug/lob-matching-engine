@@ -1,0 +1,19 @@
+[project]
+name = "lob-matching-engine"
+version = "1.0.0"
+description = "Price-time priority limit order book matching engine with FIX 4.2/4.4 ingest and maker-checker remediation"
+requires-python = ">=3.11"
+
+[tool.pytest.ini_options]
+testpaths = ["backend/tests"]
+pythonpath = ["."]
+addopts = "-ra"
+filterwarnings = ["ignore:The anyio.abc.BlockingPortal alias is deprecated:DeprecationWarning"]
+
+[tool.ruff]
+line-length = 160
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "B", "I", "UP", "PLE"]
+ignore = ["E501"]
