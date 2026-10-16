@@ -1,5 +1,7 @@
 # LOBX — Limit Order Book Matching Engine & FIX 4.2/4.4 Inspector
 
+[![ci](https://github.com/ericflores1186-debug/lob-matching-engine/actions/workflows/ci.yml/badge.svg)](https://github.com/ericflores1186-debug/lob-matching-engine/actions/workflows/ci.yml)
+
 A deterministic price-time priority matching engine with a FIX 4.2/4.4 session validator, an append-only PostgreSQL event log that can rebuild any book bit-for-bit, and an operator workbench for production-support triage with four-eyes (maker-checker) replay.
 
 ![Operator workbench](docs/workbench.png)
